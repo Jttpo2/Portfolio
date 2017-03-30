@@ -3,9 +3,7 @@
   "version": "0.1.0",
   "description": "Portfolio/shopfront webpage",
   "main": "index.html",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jttpo2/Portfolio.git"
@@ -15,5 +13,9 @@
   "bugs": {
     "url": "https://github.com/Jttpo2/Portfolio/issues"
   },
-  "homepage": "https://github.com/Jttpo2/Portfolio#readme"
+  "homepage": "https://github.com/Jttpo2/Portfolio#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
+  }
 }
