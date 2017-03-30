@@ -1,0 +1,19 @@
+{
+  "name": "Portfolio",
+  "version": "0.1.0",
+  "description": "Portfolio/shopfront webpage",
+  "main": "index.html",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jttpo2/Portfolio.git"
+  },
+  "author": "John Petersson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jttpo2/Portfolio/issues"
+  },
+  "homepage": "https://github.com/Jttpo2/Portfolio#readme"
+}
