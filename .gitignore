@@ -1,6 +1,9 @@
 # Projects should have their own repos
 /projects
 
+# Client side code is in its own repo
+/client
+
 # Osx files
 .DS_Store
 
