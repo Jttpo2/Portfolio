@@ -1,3 +1,3 @@
-# JohnPetersson
+# Portfolio
 
-My portfolio webpage/shopfront
+My portfolio website
