@@ -10,12 +10,6 @@ gulp.task('watch', function() {
 	gulp.watch('client/**/*.html', ['reload']);
 });
 
-// gulp.task('build-css', function() {
-// 	return gulp.src('*.css')
-// 		.pipe(gulp.dest(''))
-// 		.pipe(livereload());
-// });
-
 gulp.task('reload', function() {
 	livereload.reload();
 }); 

@@ -2,7 +2,7 @@
 /projects
 
 # Client side code is in its own repo
-/client
+#/client
 
 # Osx files
 .DS_Store
