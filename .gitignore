@@ -1,5 +1,5 @@
 # Projects should have their own repos
-/projects
+/client/projects
 
 # Client side code is in its own repo
 #/client
