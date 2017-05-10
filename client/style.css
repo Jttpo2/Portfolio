@@ -1,16 +1,11 @@
 /* style.css */
 
 html, body {
-	height: 100%;
+	/* No browser default margin */
+	margin: 0;
 }
 
-body {
-	margin: 0;
-	display: flex;
+iframe {
+	border-width: 0px;
 
-	 /*Center sketch horizontally */
-	justify-content: center;
-
-	/* Center vertically */
-	align-items: center;
 }
