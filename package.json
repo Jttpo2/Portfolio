@@ -1,6 +1,6 @@
 {
   "name": "Portfolio",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Portfolio/shopfront webpage",
   "main": "index.html",
   "scripts": {},
@@ -16,6 +16,10 @@
   "homepage": "https://github.com/Jttpo2/Portfolio#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-livereload": "^3.8.1"
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "jshintConfig": {
+    "esversion": 6
   }
 }

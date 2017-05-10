@@ -1,8 +1,8 @@
 # Projects should have their own repos
 /client/projects
 
-# Client side code is in its own repo
-#/client
+# Using Sass
+/client/style.css
 
 # Osx files
 .DS_Store
