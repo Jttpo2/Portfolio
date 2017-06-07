@@ -1,10 +1,54 @@
 // Sass
 
+$button-background-color: #999999;
+$button-hover-color: #ddd;
+$button-color: black;
+$nextprev-edge-margin: 2%;
+
+
 html, body {
 	// No browser default margin
 	margin: 0;
+	padding: 0;
 }
 
 iframe {
 	border-width: 0px;
 }
+
+// Next/previous
+
+.button {
+	text-decoration: none;
+	display: inline-block;
+
+	padding: 0.4em 0.2em;
+	font-size: 3em;
+	background-color: $button-background-color;
+	opacity: 0.15;
+
+	color: $button-color;
+	
+	position: absolute;
+	z-index: 1;
+
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+.button:hover {
+	background-color: $button-hover-color;
+	color: $button-color;
+}
+
+#previous {
+	left: $nextprev-edge-margin;
+}
+
+#next {
+	right: $nextprev-edge-margin;
+}
+
+// .round {
+// 	border-radius: 50%;
+// }
