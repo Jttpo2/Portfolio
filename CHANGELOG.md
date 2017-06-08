@@ -4,11 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## [Unreleased]
-## Added
+
+## [0.5.0] - 2017-06-08
+### Added
 - Next/previous sketch buttons.
 
 ## [0.4.0] - 2017-05-10
-## Added
+### Added
 - Support for multiple p5 sketches.
 
 ## [0.3.0] - 2017-04-21
