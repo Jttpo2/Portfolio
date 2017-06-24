@@ -33,7 +33,10 @@ function appendToDOM(sketch) {
 	iframe.src = sketch.path;
 	iframe.width = window.innerWidth;
 	iframe.height = window.innerHeight;
-	document.getElementById(sketchContainerName).appendChild(iframe);
+	let sketchContainerNode = document.getElementById(sketchContainerName);
+	sketchContainerNode.appendChild(iframe);
+
+	overlayWithInfoPanel(sketchContainerNode, "ksfbgkhsfbgsdfbgjhsdfbgj af gbasfghb asfgalfgh alfghb ahg alfg afg afgh ablfg");
 }
 
 function removeAllSketches() {
@@ -60,6 +63,17 @@ function displayPreviousSketch() {
 		currentSketchIndex = sketches.length -1;
 	}
 	displayOnly(sketches[currentSketchIndex]);
+}
+
+function overlayWithInfoPanel(node, infoText) {
+	if (!infoText || infoText == "") {
+		return;
+	}
+	let panel = document.createElement('div');
+	panel.className = "info-panel";
+	let content = document.createTextNode(infoText);
+	panel.appendChild(content);
+	node.appendChild(panel);
 }
 
 let prevButton = document.getElementById("previous");

@@ -1,9 +1,12 @@
 // Sass
 
-$button-background-color: #999999;
-$button-hover-color: #ddd;
-$button-color: black;
+$button-background-color: hsla(0, 0%, 50%, 0.15);
+$button-hover-color: hsla(0, 0%, 50%, 0.30);
+$button-color: hsla(0, 0%, 10%, 0.30);;
 $nextprev-edge-margin: 2%;
+
+$info-panel-background-color: hsla(0, 0%, 10%, 0.3);
+$info-panel-text-color: white;
 
 
 html, body {
@@ -22,18 +25,20 @@ iframe {
 	text-decoration: none;
 	display: inline-block;
 
-	padding: 0.4em 0.2em;
+	padding: 0.4em; // 0.2em;
 	font-size: 3em;
 	background-color: $button-background-color;
-	opacity: 0.15;
+	
 
 	color: $button-color;
 	
 	position: absolute;
 	z-index: 1;
 
-	top: 50%;
-	transform: translate(0, -50%);
+	
+	top: 35%;
+	bottom: 35%;
+	// transform: translate(0, -50%);
 }
 
 .button:hover {
@@ -52,3 +57,18 @@ iframe {
 // .round {
 // 	border-radius: 50%;
 // }
+
+.info-panel {
+	background: $info-panel-background-color;
+	color: $info-panel-text-color;
+	
+	position: absolute;
+	max-width: 400px;
+	bottom: 10%;
+	left:  10%;
+	// right: 10%;
+	margin-right: 10%;
+	// margin-left: 10%;
+	
+	padding: 1em;
+}
