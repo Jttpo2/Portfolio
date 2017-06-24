@@ -12,7 +12,7 @@ $info-panel-background-color: hsla(0, 0%, 10%, 0.3);
 $info-panel-text-color: white;
 $info-panel-header-font: Vollkorn, Serif;
 $info-panel-bodycopy-font: Exo, Arial, Sans-Serif;
-
+$info-panel-link-color: hsla(0, 0%, 30%, 1);
 
 
 html, body {
@@ -67,8 +67,7 @@ iframe {
 .info-panel {
 	background: $info-panel-background-color;
 	color: $info-panel-text-color;
-	font-family: $info-panel-header-font;
-	font-weight: bold;
+	
 	
 	position: absolute;
 	max-width: 400px;
@@ -79,4 +78,20 @@ iframe {
 	// margin-left: 10%;
 	
 	padding: 1em;
+
+	h1 {
+		font-family: $info-panel-header-font;
+		// font-weight: bold;
+		font-size: 1.5em;
+	}
+
+	p {
+		font-family: $info-panel-bodycopy-font; 
+		font-size: 1em;
+	}
+
+	a {
+		color: $info-panel-link-color;
+		text-decoration: none;
+	}
 }
