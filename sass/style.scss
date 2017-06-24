@@ -6,7 +6,7 @@
 $button-background-color: hsla(0, 0%, 50%, 0.15);
 $button-hover-color: hsla(0, 0%, 50%, 0.30);
 $button-color: hsla(0, 0%, 10%, 0.30);;
-$nextprev-edge-margin: 2%;
+$nextprev-edge-margin: 1em;
 
 $info-panel-background-color: hsla(0, 0%, 10%, 0.3);
 $info-panel-text-color: white;
@@ -28,23 +28,29 @@ iframe {
 // Next/previous
 
 .button {
-	text-decoration: none;
-	display: inline-block;
-
-	padding: 0.4em; // 0.2em;
-	font-size: 3em;
-	background-color: $button-background-color;
-	
-
-	color: $button-color;
-	
 	position: absolute;
+	display: inline-block;
+	
+	// Center label
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	padding: 1rem; // 0.2em;
+
+	background-color: $button-background-color;
+		
 	z-index: 1;
 
-	
-	top: 35%;
-	bottom: 35%;
-	// transform: translate(0, -50%);
+	top: 43%;
+	bottom: 43%;
+
+	.button-label {
+		font-size: 3rem;
+		text-decoration: none;
+		color: $button-color;
+		text-align: center;
+	}
 }
 
 .button:hover {
@@ -68,16 +74,15 @@ iframe {
 	background: $info-panel-background-color;
 	color: $info-panel-text-color;
 	
-	
 	position: absolute;
 	max-width: 400px;
-	bottom: 10%;
-	left:  10%;
-	// right: 10%;
-	margin-right: 10%;
-	// margin-left: 10%;
+	bottom: 2.5rem;
+	right: 2.5rem;
+	// margin-right: 10%;
+	// left:  10%;
+	margin-left: 1rem;
 	
-	padding: 1em;
+	padding: 1rem;
 
 	h1 {
 		font-family: $info-panel-header-font;
