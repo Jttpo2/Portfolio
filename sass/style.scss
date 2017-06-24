@@ -1,5 +1,8 @@
 // Sass
 
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
 $button-background-color: hsla(0, 0%, 50%, 0.15);
 $button-hover-color: hsla(0, 0%, 50%, 0.30);
 $button-color: hsla(0, 0%, 10%, 0.30);;
@@ -7,6 +10,9 @@ $nextprev-edge-margin: 2%;
 
 $info-panel-background-color: hsla(0, 0%, 10%, 0.3);
 $info-panel-text-color: white;
+$info-panel-header-font: Vollkorn, Serif;
+$info-panel-bodycopy-font: Exo, Arial, Sans-Serif;
+
 
 
 html, body {
@@ -61,6 +67,8 @@ iframe {
 .info-panel {
 	background: $info-panel-background-color;
 	color: $info-panel-text-color;
+	font-family: $info-panel-header-font;
+	font-weight: bold;
 	
 	position: absolute;
 	max-width: 400px;

@@ -11,16 +11,16 @@ let sketches = [
 {
 	name: 'blobs',
 	path: p5ProjectsPath + sketch1Folder + sketchName,
-	description: 'Simple blob-eat-blob game.'
+	description: 'Simple blob-eat-blob game'
 }, {
 	name: 'perlin',
 	path: p5ProjectsPath + sketch2Folder + sketchName,
-	description: 'Perlin noise pattern generating experiment.'
+	description: 'Perlin noise pattern generating experiment'
 },
 {
 	name: 'code-rain',
 	path: p5ProjectsPath + sketch3Folder + sketchName,
-	description: 'Matrix style code rain.'
+	description: 'Matrix style code rain'
 }
 ];
 
@@ -36,7 +36,7 @@ function appendToDOM(sketch) {
 	let sketchContainerNode = document.getElementById(sketchContainerName);
 	sketchContainerNode.appendChild(iframe);
 
-	overlayWithInfoPanel(sketchContainerNode, "ksfbgkhsfbgsdfbgjhsdfbgj af gbasfghb asfgalfgh alfghb ahg alfg afg afgh ablfg");
+	overlayWithInfoPanel(sketchContainerNode, sketch.description);
 }
 
 function removeAllSketches() {
