@@ -49,19 +49,23 @@ function appendToDOM(sketch) {
 	let readmePath = sketch.folderPath + sketch.readmeFileName;
 	getRawTextContentsOfFile(readmePath, function() {
 		let rawText = this.responseText;
-		if (this.status === 404) {
+		if (this.status === 404 ) {
 			// No readme file, use description in sketches array
 			rawText = sketch.description;
 		}
 
 		// Convert sketch info markdown to HTML and add it as an overlay
 		getHTMLFromMarkdown(rawText, function() {
+			let descriptionHTML = this.responseText;
+			if (descriptionHTML.indexOf('API rate limit exceeded') !== -1) {
+				// Github requests for markdown conversion has reached it's limit
+				// descriptionHTML = sketch.description;
+				descriptionHTML = '';
+			}
 			// 'this' refers to the http response  
-			overlayWithInfoPanel(sketchContainerNode, this.responseText);
+			overlayWithInfoPanel(sketchContainerNode, descriptionHTML);
 		});
-	});
-
-	
+	});	
 }
 
 function removeAllSketches() {
