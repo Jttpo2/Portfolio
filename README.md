@@ -1,3 +1,2 @@
 # Portfolio
-
-My portfolio website
+Portfolio website for John Petersson
