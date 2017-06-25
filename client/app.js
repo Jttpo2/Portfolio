@@ -1,30 +1,35 @@
 let p5ProjectsPath = './projects/p5/';
-let sketch1Folder = 'blobs/';
-let sketch2Folder = 'perlin/';
-let sketch3Folder = 'code-rain/';
 let sketchNameStandard = 'index.html';
 let readmeNameStandard = "README.md";
 
-let currentSketchIndex = 1;
+let currentSketchIndex = 0;
 let sketchContainerName = 'sketch-container';
 
 let sketches = [
 {
-	name: 'blobs',
-	folderPath: p5ProjectsPath + sketch1Folder,
-	entryFileName: sketchNameStandard,
-	readmeFileName: readmeNameStandard,
-	description: 'Simple blob-eat-blob game'
-}, {
 	name: 'perlin',
-	folderPath: p5ProjectsPath + sketch2Folder,
+	folderPath: p5ProjectsPath + 'perlin/',
 	entryFileName: sketchNameStandard,
 	readmeFileName: readmeNameStandard,
 	description: 'Perlin noise pattern generating experiment'
 },
 {
+	name: 'flowers',
+	folderPath: p5ProjectsPath + 'flowers/',
+	entryFileName: sketchNameStandard,
+	readmeFileName: readmeNameStandard,
+	description: 'Simulation of tulips in the wind'
+}, 
+{
+	name: 'blobs',
+	folderPath: p5ProjectsPath + 'blobs/',
+	entryFileName: sketchNameStandard,
+	readmeFileName: readmeNameStandard,
+	description: 'Simple blob-eat-blob game'
+},
+{
 	name: 'code-rain',
-	folderPath: p5ProjectsPath + sketch3Folder,
+	folderPath: p5ProjectsPath + 'code-rain/',
 	entryFileName: sketchNameStandard,
 	readmeFileName: readmeNameStandard,
 	description: 'Matrix style code rain'
@@ -32,7 +37,7 @@ let sketches = [
 ];
 
 // Display a sketch
-displayOnly(sketches[1]);
+displayOnly(sketches[0]);
 
 function appendToDOM(sketch) {
 	let iframe = document.createElement('iframe');
