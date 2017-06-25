@@ -6,7 +6,7 @@
 $button-background-color: hsla(0, 0%, 50%, 0.15);
 $button-hover-color: hsla(0, 0%, 50%, 0.30);
 $button-color: hsla(0, 0%, 10%, 0.30);;
-$nextprev-edge-margin: 1em;
+$nextprev-edge-margin: 1.5rem;
 
 $info-panel-background-color: hsla(0, 0%, 10%, 0.3);
 $info-panel-text-color: white;
@@ -76,11 +76,11 @@ iframe {
 	
 	position: absolute;
 	max-width: 400px;
-	bottom: 2.5rem;
-	right: 2.5rem;
+	bottom: $nextprev-edge-margin;
+	right: $nextprev-edge-margin;
 	// margin-right: 10%;
 	// left:  10%;
-	margin-left: 1rem;
+	margin-left: $nextprev-edge-margin;
 	
 	padding: 1rem;
 

@@ -1,4 +1,6 @@
-let p5ProjectsPath = './projects/p5/';
+let projectsPath = './projects/';
+let p5Path = 'p5/';
+let unityPath = 'unity/';
 let sketchNameStandard = 'index.html';
 let readmeNameStandard = "README.md";
 
@@ -8,28 +10,35 @@ let sketchContainerName = 'sketch-container';
 let sketches = [
 {
 	name: 'perlin',
-	folderPath: p5ProjectsPath + 'perlin/',
+	folderPath: projectsPath + p5Path + 'perlin/',
 	entryFileName: sketchNameStandard,
 	readmeFileName: readmeNameStandard,
 	description: 'Perlin noise pattern generating experiment'
 },
 {
 	name: 'flowers',
-	folderPath: p5ProjectsPath + 'flowers/',
+	folderPath: projectsPath + p5Path + 'flowers/',
 	entryFileName: sketchNameStandard,
 	readmeFileName: readmeNameStandard,
 	description: 'Simulation of tulips in the wind'
 }, 
 {
+	name: 'flockheart',
+	folderPath: projectsPath + unityPath + 'flockheart/',
+	entryFileName: sketchNameStandard,
+	readmeFileName: readmeNameStandard,
+	description: 'Flockheart'
+}, 
+{
 	name: 'blobs',
-	folderPath: p5ProjectsPath + 'blobs/',
+	folderPath: projectsPath + p5Path + 'blobs/',
 	entryFileName: sketchNameStandard,
 	readmeFileName: readmeNameStandard,
 	description: 'Simple blob-eat-blob game'
 },
 {
 	name: 'code-rain',
-	folderPath: p5ProjectsPath + 'code-rain/',
+	folderPath: projectsPath + p5Path + 'code-rain/',
 	entryFileName: sketchNameStandard,
 	readmeFileName: readmeNameStandard,
 	description: 'Matrix style code rain'
