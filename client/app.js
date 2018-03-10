@@ -21,14 +21,14 @@ let sketches = [
 	entryFileName: sketchNameStandard,
 	readmeFileName: readmeNameStandard,
 	description: 'Simulation of tulips in the wind'
-}, 
+},
 {
 	name: 'flockheart',
 	folderPath: projectsPath + unityPath + 'flockheart/',
 	entryFileName: sketchNameStandard,
 	readmeFileName: readmeNameStandard,
 	description: 'Flockheart'
-}, 
+},
 {
 	name: 'blobs',
 	folderPath: projectsPath + p5Path + 'blobs/',
@@ -46,7 +46,7 @@ let sketches = [
 ];
 
 // Display a sketch
-displayOnly(sketches[0]);
+displayOnly(sketches[1]);
 
 function appendToDOM(sketch) {
 	let iframe = document.createElement('iframe');
@@ -74,10 +74,10 @@ function appendToDOM(sketch) {
 				// Github requests for markdown conversion has reached it's limit
 				descriptionHTML = getSimpleHTMLDescription(sketch);
 			}
-			// 'this' refers to the http response  
+			// 'this' refers to the http response
 			overlayWithInfoPanel(sketchContainerNode, descriptionHTML);
 		});
-	});	
+	});
 }
 
 function removeAllSketches() {
@@ -112,10 +112,10 @@ function overlayWithInfoPanel(node, infoHTML) {
 	}
 	let panel = document.createElement('div');
 	panel.className = "info-panel";
-	
+
 	// let content = document.createTextNode(infoHTML);
 	// panel.appendChild(content);
-	
+
 	panel.innerHTML = infoHTML;
 
 	node.appendChild(panel);
