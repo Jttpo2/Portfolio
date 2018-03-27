@@ -1,8 +1,8 @@
 # Projects should have their own repos
-/client/projects
+/public/projects
 
 # Using Sass
-/client/style.css
+/public/style.css
 
 # Osx files
 .DS_Store
