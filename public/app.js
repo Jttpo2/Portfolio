@@ -160,7 +160,7 @@ function getRawTextContentsOfFile(path, callback) {
 	httpRequest.open('GET', path);
 	httpRequest.onload = callback;
 	httpRequest.send();
-}
+} 
 
 function getSimpleHTMLDescription(sketch) {
 	return '<h1>' + sketch.description + '</h1>';
