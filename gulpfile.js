@@ -1,4 +1,4 @@
-var gulp = require("gulp"), 
+var gulp = require("gulp"),
 livereload = require('gulp-livereload'),
 sass = require('gulp-sass');
 
@@ -13,10 +13,12 @@ gulp.task('watch', function() {
 
 gulp.task('reload', function() {
 	livereload.reload();
-}); 
+});
 
 gulp.task('sass', function () {
 	gulp.src('./sass/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
 	.pipe(gulp.dest('./client'));
 });
+
+gulp.task('build', ['sass']);
