@@ -1,8 +1,11 @@
+# Ignoring unity projects for now, since they are not in own submodules
+/dist/projects/unity
+
 # Projects should have their own repos
-/public/projects
+#/dist/projects
 
 # Using Sass
-/public/style.css
+/dist/style.css
 
 # Osx files
 .DS_Store
