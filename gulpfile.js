@@ -7,8 +7,8 @@ gulp.task('default', ['watch']);
 gulp.task('watch', function() {
 	livereload.listen();
 	gulp.watch('**/*.scss', ['sass', 'reload']);
-	gulp.watch('public/**/*.js', ['reload']);
-	gulp.watch('public/**/*.html', ['reload']);
+	gulp.watch('dist/**/*.js', ['reload']);
+	gulp.watch('dist/**/*.html', ['reload']);
 });
 
 gulp.task('reload', function() {
@@ -18,7 +18,7 @@ gulp.task('reload', function() {
 gulp.task('sass', function () {
 	gulp.src('./sass/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
-	.pipe(gulp.dest('./public'));
+	.pipe(gulp.dest('./dist'));
 });
 
 gulp.task('build', ['sass']);
