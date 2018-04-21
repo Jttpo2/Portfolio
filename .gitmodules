@@ -1,0 +1,3 @@
+[submodule "dist/projects/p5/flowers"]
+	path = dist/projects/p5/flowers
+	url = https://github.com/Jttpo2/flowers.git
