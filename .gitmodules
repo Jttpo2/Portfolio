@@ -1,0 +1,15 @@
+[submodule "dist/projects/p5/flowers"]
+	path = dist/projects/p5/flowers
+	url = https://github.com/Jttpo2/flowers.git
+[submodule "dist/projects/p5/perlin"]
+	path = dist/projects/p5/perlin
+	url = https://github.com/Jttpo2/Perlin.git
+[submodule "dist/projects/p5/code-rain"]
+	path = dist/projects/p5/code-rain
+	url = https://github.com/Jttpo2/code-rain.git
+[submodule "dist/projects/p5/blobs"]
+	path = dist/projects/p5/blobs
+	url = https://github.com/Jttpo2/blobs.git
+[submodule "dist/projects/unity/flockheart"]
+	path = dist/projects/unity/flockheart
+	url = https://github.com/Jttpo2/Flockheart.git
