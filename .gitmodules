@@ -10,3 +10,6 @@
 [submodule "dist/projects/p5/blobs"]
 	path = dist/projects/p5/blobs
 	url = https://github.com/Jttpo2/blobs.git
+[submodule "dist/projects/unity/flockheart"]
+	path = dist/projects/unity/flockheart
+	url = https://github.com/Jttpo2/Flockheart.git
