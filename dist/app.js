@@ -8,45 +8,45 @@ let currentSketchIndex = 0;
 let sketchContainerName = 'sketch-container';
 
 let sketches = [
-{
-	name: 'perlin',
-	folderPath: projectsPath + p5Path + 'perlin/',
-	entryFileName: sketchNameStandard,
-	readmeFileName: readmeNameStandard,
-	description: 'Perlin noise pattern generating experiment'
-},
-{
-	name: 'flowers',
-	folderPath: projectsPath + p5Path + 'flowers/',
-	entryFileName: sketchNameStandard,
-	readmeFileName: readmeNameStandard,
-	description: 'Simulation of tulips in the wind'
-},
-{
-	name: 'flockheart',
-	folderPath: projectsPath + unityPath + 'flockheart/',
-	entryFileName: sketchNameStandard,
-	readmeFileName: readmeNameStandard,
-	description: 'Flockheart'
-},
-{
-	name: 'blobs',
-	folderPath: projectsPath + p5Path + 'blobs/',
-	entryFileName: sketchNameStandard,
-	readmeFileName: readmeNameStandard,
-	description: 'Simple blob-eat-blob game'
-},
-{
-	name: 'code-rain',
-	folderPath: projectsPath + p5Path + 'code-rain/',
-	entryFileName: sketchNameStandard,
-	readmeFileName: readmeNameStandard,
-	description: 'Matrix style code rain'
-}
+	{
+		name: 'perlin',
+		folderPath: projectsPath + p5Path + 'perlin/',
+		entryFileName: sketchNameStandard,
+		readmeFileName: readmeNameStandard,
+		description: 'Perlin noise pattern generating experiment'
+	},
+	{
+		name: 'flowers',
+		folderPath: projectsPath + p5Path + 'flowers/',
+		entryFileName: sketchNameStandard,
+		readmeFileName: readmeNameStandard,
+		description: 'Simulation of tulips in the wind'
+	},
+	{
+		name: 'flockheart',
+		folderPath: projectsPath + unityPath + 'flockheart/',
+		entryFileName: sketchNameStandard,
+		readmeFileName: readmeNameStandard,
+		description: 'Flockheart'
+	},
+	{
+		name: 'blobs',
+		folderPath: projectsPath + p5Path + 'blobs/',
+		entryFileName: sketchNameStandard,
+		readmeFileName: readmeNameStandard,
+		description: 'Simple blob-eat-blob game'
+	},
+	{
+		name: 'code-rain',
+		folderPath: projectsPath + p5Path + 'code-rain/',
+		entryFileName: sketchNameStandard,
+		readmeFileName: readmeNameStandard,
+		description: 'Matrix style code rain'
+	}
 ];
 
 // Display a sketch
-displayOnly(sketches[1]);
+displayOnly(sketches[currentSketchIndex]);
 
 function appendToDOM(sketch) {
 	let iframe = document.createElement('iframe');

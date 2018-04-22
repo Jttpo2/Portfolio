@@ -5,7 +5,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## [Unreleased]
 
-## [0.7.1] - 2018-04-22
+## [0.7.2] - 2018-04-22
 ### Added
 - Flockheart unity project added as submodule.
 
