@@ -46,7 +46,7 @@ let sketches = [
 ];
 
 // Display a sketch
-displayOnly(sketches[1]);
+displayOnly(sketches[currentSketchIndex]);
 
 function appendToDOM(sketch) {
 	let iframe = document.createElement('iframe');
