@@ -1,6 +1,3 @@
-# Ignoring unity projects for now, since they are not in own submodules
-/dist/projects/unity
-
 # Projects should have their own repos
 #/dist/projects
 
