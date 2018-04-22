@@ -6,7 +6,7 @@ let readmeNameStandard = "README.md";
 
 let currentSketchIndex = 0;
 let sketchContainerName = 'sketch-container';
-
+ 
 let sketches = [
 	{
 		name: 'perlin',
@@ -160,7 +160,7 @@ function getRawTextContentsOfFile(path, callback) {
 	httpRequest.open('GET', path);
 	httpRequest.onload = callback;
 	httpRequest.send();
-} 
+}
 
 function getSimpleHTMLDescription(sketch) {
 	return '<h1>' + sketch.description + '</h1>';
