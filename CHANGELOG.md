@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## [Unreleased]
 
+## [0.7.1] - 2018-04-22
+### Added
+- Flockheart unity project added as submodule.
+
 ## [0.7.0] - 2018-04-22
 ### Added
 - p5.js projects added as submodules.

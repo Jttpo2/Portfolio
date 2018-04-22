@@ -12,4 +12,4 @@
 	url = https://github.com/Jttpo2/blobs.git
 [submodule "dist/projects/unity/flockheart"]
 	path = dist/projects/unity/flockheart
-	url = https://github.com/Jttpo2/Flockheart.git
+	url = https://github.com/Jttpo2/flockheart-web-build.git
