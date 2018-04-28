@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Vollkorn');
 @import url('https://fonts.googleapis.com/css?family=Exo');
 
-$button-background-color: hsla(0, 0%, 50%, 0.15);
-$button-hover-color: hsla(0, 0%, 50%, 0.30);
-$button-color: hsla(0, 0%, 10%, 0.30);;
+$button-background-color: hsla(0, 0%, 50%, 0.2);
+$button-background-color-hover: hsla(0, 0%, 50%, 0.50);
+$button-color: hsla(0, 0%, 10%, 0.30);
+$button-color-hover: hsla(0, 0%, 100%, 1.0);
 $nextprev-edge-margin: 1.5rem;
 
 $info-panel-background-color: hsla(0, 0%, 10%, 0.3);
@@ -29,14 +30,15 @@ iframe {
 
 .button {
 	position: absolute;
-	display: inline-block;
 
 	// Center label
 	display: flex;
 	justify-content: center;
+	align-content: center;
 	flex-direction: column;
 
-	padding: 1rem; // 0.2em;
+	// padding: 1rem; // 0.2em;
+	width: 3rem;
 
 	background-color: $button-background-color;
 
@@ -47,18 +49,19 @@ iframe {
 
 	cursor: pointer;
 
-	.button-label {
-		font-size: 3rem;
-		text-decoration: none;
-		color: $button-color;
-		text-align: center;
+	transition: all .2s ease-in-out;
+
+	font-size: 3rem;
+	text-decoration: none;
+	color: $button-color;
+	text-align: center;
+
+	&:hover {
+		background-color: $button-background-color-hover;
+		color: $button-color-hover;
 	}
 }
 
-.button:hover {
-	background-color: $button-hover-color;
-	color: $button-color;
-}
 
 #previous {
 	left: $nextprev-edge-margin;
