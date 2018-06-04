@@ -1,15 +1,15 @@
-[submodule "dist/projects/p5/flowers"]
-	path = dist/projects/p5/flowers
-	url = https://github.com/Jttpo2/flowers.git
-[submodule "dist/projects/p5/perlin"]
-	path = dist/projects/p5/perlin
-	url = https://github.com/Jttpo2/Perlin.git
-[submodule "dist/projects/p5/code-rain"]
-	path = dist/projects/p5/code-rain
-	url = https://github.com/Jttpo2/code-rain.git
-[submodule "dist/projects/p5/blobs"]
-	path = dist/projects/p5/blobs
-	url = https://github.com/Jttpo2/blobs.git
-[submodule "dist/projects/unity/flockheart"]
-	path = dist/projects/unity/flockheart
-	url = https://github.com/Jttpo2/flockheart-web-build.git
+[submodule "public/projects/p5/perlin"]
+	path = public/projects/p5/perlin
+	url = https://github.com/jttpo2/perlin
+[submodule "public/projects/p5/blobs"]
+	path = public/projects/p5/blobs
+	url = https://github.com/jttpo2/blobs
+[submodule "public/projects/p5/flowers"]
+	path = public/projects/p5/flowers
+	url = https://github.com/jttpo2/flowers
+[submodule "public/projects/unity/flockheart"]
+	path = public/projects/unity/flockheart
+	url = https://github.com/jttpo2/flockheart-web-build
+[submodule "public/projects/p5/code-rain"]
+	path = public/projects/p5/code-rain
+	url = https://github.com/jttpo2/code-rain

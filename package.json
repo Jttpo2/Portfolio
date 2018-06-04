@@ -1,9 +1,14 @@
 {
   "name": "Portfolio",
-  "version": "0.7.2",
+  "version": "1.0.0",
   "description": "Portfolio/shopfront webpage",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jttpo2/Portfolio.git"
@@ -13,17 +18,14 @@
   "bugs": {
     "url": "https://github.com/Jttpo2/Portfolio/issues"
   },
-  "homepage": "https://github.com/Jttpo2/Portfolio#readme",
-  "devDependencies": {
-    "gulp-livereload": "^3.8.1"
-  },
+  "homepage": "https://johnpetersson.se",
   "jshintConfig": {
     "esversion": 6
   },
-  "postinstall": "gulp build",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
-    "http-server": "^0.11.1"
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4",
+    "styled-components": "^3.3.2"
   }
 }
