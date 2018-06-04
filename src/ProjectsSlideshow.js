@@ -21,8 +21,12 @@ export default class ProjectsSlideshow extends React.Component {
   }
 
   goTo(index) {
-    let newIndex = index < 0 ? this.props.projects.length - 1 : index;
-    newIndex = index >= this.props.projects.length ? 0 : index;
+    let newIndex = index;
+    if (index < 0) {
+      newIndex = this.props.projects.length - 1;
+    } else if (index >= this.props.projects.length) {
+      newIndex = 0;
+    }
     this.setState({
       currentProjectIndex: newIndex
     });
@@ -39,7 +43,7 @@ export default class ProjectsSlideshow extends React.Component {
         </Gui>
         <Projects>
           <Project
-          src={this.props.projects[this.state.currentProjectIndex]}
+          project={this.props.projects[this.state.currentProjectIndex]}
           fullScreen={true}
         />
       </Projects>

@@ -9,7 +9,7 @@ export default class Project extends React.Component {
   render() {
     return (
       <BorderlessIframe
-        src={this.props.src}
+        src={this.props.project.url}
         width={this.props.fullScreen ? window.innerWidth : defaultWidth}
         height={this.props.fullScreen ? window.innerHeight : defaultHeight}/>
     );

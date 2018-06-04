@@ -3,60 +3,62 @@ import styled from 'styled-components';
 
 import ProjectsSlideShow from './ProjectsSlideshow.js';
 
-// const projectsPath = './projects/';
-// const p5Path = 'p5/';
-// const unityPath = 'unity/';
-// const sketchNameStandard = 'index.html';
-// const readmeNameStandard = "README.md";
-// const sketches = [
-// 	{
-// 		name: 'perlin',
-// 		folderPath: projectsPath + p5Path + 'perlin/',
-// 		entryFileName: sketchNameStandard,
-// 		readmeFileName: readmeNameStandard,
-// 		description: 'Perlin noise pattern generating experiment'
-// 	},
-// 	{
-// 		name: 'flowers',
-// 		folderPath: projectsPath + p5Path + 'flowers/',
-// 		entryFileName: sketchNameStandard,
-// 		readmeFileName: readmeNameStandard,
-// 		description: 'Simulation of tulips in the wind'
-// 	},
-// 	{
-// 		name: 'flockheart',
-// 		folderPath: projectsPath + unityPath + 'flockheart/',
-// 		entryFileName: sketchNameStandard,
-// 		readmeFileName: readmeNameStandard,
-// 		description: 'Flockheart'
-// 	},
-// 	{
-// 		name: 'blobs',
-// 		folderPath: projectsPath + p5Path + 'blobs/',
-// 		entryFileName: sketchNameStandard,
-// 		readmeFileName: readmeNameStandard,
-// 		description: 'Simple blob-eat-blob game'
-// 	},
-// 	{
-// 		name: 'code-rain',
-// 		folderPath: projectsPath + p5Path + 'code-rain/',
-// 		entryFileName: sketchNameStandard,
-// 		readmeFileName: readmeNameStandard,
-// 		description: 'Matrix style code rain'
-// 	}
-// ];
-
-// const testSketchPath = ;
-// console.log(testSketchPath);
-
 class App extends Component {
   constructor(props) {
     super(props);
 
+    this.projectsPath = './projects/';
+    this.p5Path = 'p5/';
+    this.unityPath = 'unity/';
+    this.sketchNameStandard = 'index.html';
+    this.readmeNameStandard = "README.md";
+
     this.projects = [
-      './projects/p5/perlin/index.html',
-      'http://singit.netlify.com',
-      'http://dadgad-tuner.netlify.com'
+      {
+        name:'singit',
+        url: 'http://singit.netlify.com',
+        description: 'Distributed live karaoke helper'
+      },
+      {
+        name:'dadgad-tuner',
+        url:  'http://dadgad-tuner.netlify.com',
+        description: 'Simple guitar tuner'
+      },
+    	{
+    		name: 'perlin',
+    		url: this.projectsPath + this.p5Path + 'perlin/',
+    		// entryFileName: this.sketchNameStandard,
+    		readmeFileName: this.readmeNameStandard,
+    		description: 'Perlin noise pattern generating experiment'
+    	},
+    	{
+    		name: 'flowers',
+    		url: this.projectsPath + this.p5Path + 'flowers/',
+    		// entryFileName: this.sketchNameStandard,
+    		readmeFileName: this.readmeNameStandard,
+    		description: 'Simulation of tulips in the wind'
+    	},
+    	{
+    		name: 'flockheart',
+    		url: this.projectsPath + this.unityPath + 'flockheart/',
+    		// entryFileName: this.sketchNameStandard,
+    		readmeFileName: this.readmeNameStandard,
+    		description: 'Flockheart'
+    	},
+    	{
+    		name: 'blobs',
+    		url: this.projectsPath + this.p5Path + 'blobs/',
+    		// entryFileName: this.sketchNameStandard,
+    		readmeFileName: this.readmeNameStandard,
+    		description: 'Simple blob-eat-blob game'
+    	},
+    	{
+    		name: 'code-rain',
+    		url: this.projectsPath + this.p5Path + 'code-rain/',
+    		// entryFileName: sketchNameStandard,
+    		readmeFileName: this.readmeNameStandard,
+    		description: 'Matrix style code rain'
+    	}
     ];
   }
 
