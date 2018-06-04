@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## [Unreleased]
+### Added
+- Rebuilt whole project with React.
+- Singit as submodule.
+- Dadgad-tuner as submodule.
+
+### Removed
+- Gulp.
+
 
 ## [0.7.2] - 2018-04-22
 ### Added
