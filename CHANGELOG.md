@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ## [Unreleased]
+
+## [1.0.0] - 2018-06-04
 ### Added
 - Rebuilt whole project with React.
 - Singit as submodule.
@@ -11,7 +13,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
 ### Removed
 - Gulp.
-
 
 ## [0.7.2] - 2018-04-22
 ### Added
