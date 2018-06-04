@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ### Added
 - Rebuilt whole project with React.
 - Singit as submodule.
-- Dadgad-tuner as submodule.
+- Dadgad-tuner as submodule. 
 
 ### Removed
 - Gulp.
