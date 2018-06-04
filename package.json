@@ -18,18 +18,14 @@
   "bugs": {
     "url": "https://github.com/Jttpo2/Portfolio/issues"
   },
-  "homepage": "https://github.com/Jttpo2/Portfolio#readme",
+  "homepage": "https://johnpetersson.se",
   "devDependencies": {
     "gulp-livereload": "^3.8.1"
   },
   "jshintConfig": {
     "esversion": 6
   },
-  "postinstall": "gulp build",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0",
-    "http-server": "^0.11.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-scripts": "1.1.4",
