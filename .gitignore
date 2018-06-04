@@ -1,8 +1,8 @@
 # Projects should have their own repos
 #/dist/projects
 
-# Using Sass
-/dist/style.css
+# Build directory
+/build
 
 # Osx files
 .DS_Store
