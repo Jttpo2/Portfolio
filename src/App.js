@@ -16,12 +16,12 @@ class App extends Component {
     this.projects = [
       {
         name:'singit',
-        url: 'http://singit.netlify.com',
+        url: 'https://singit.netlify.com',
         description: 'Distributed live karaoke helper'
       },
       {
         name:'dadgad-tuner',
-        url:  'http://dadgad-tuner.netlify.com',
+        url:  'https://dadgad-tuner.netlify.com',
         description: 'Simple guitar tuner'
       },
     	{
