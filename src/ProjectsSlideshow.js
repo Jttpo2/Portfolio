@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Colors from './Colors.js';
 import Project from './Project.js';
+import DescriptionOverlay from './DescriptionOverlay.js';
 
 export default class ProjectsSlideshow extends React.Component {
   constructor(props) {
@@ -10,6 +11,10 @@ export default class ProjectsSlideshow extends React.Component {
     this.state = {
       currentProjectIndex: 0
     };
+  }
+
+  getCurrentProject() {
+    return this.props.projects[this.state.currentProjectIndex];
   }
 
   next() {
@@ -40,81 +45,84 @@ export default class ProjectsSlideshow extends React.Component {
             <PrevButton onClick={() => this.previous()}>&#8249;</PrevButton>
             <NextButton onClick={() => this.next()}>&#8250;</NextButton>
           </NavButtons>
-        </Gui>
-        <Projects>
-          <Project
-          project={this.props.projects[this.state.currentProjectIndex]}
-          fullScreen={true}
-        />
-      </Projects>
-    </Container>
-  );
-}
-}
+          <DescriptionOverlay
+            header={this.getCurrentProject().name}
+            body={this.getCurrentProject().description}/>
+          </Gui>
+          <Projects>
+            <Project
+              project={this.getCurrentProject()}
+              fullScreen={true}
+            />
+          </Projects>
+        </Container>
+      );
+    }
+  }
 
-const Container = styled.div`
-height: 100%;
+  const Container = styled.div`
+  height: 100%;
 
-`;
+  `;
 
-const Projects = styled.div`
-position: absolute;
-`;
+  const Projects = styled.div`
+  position: absolute;
+  `;
 
-const Gui = styled.div`
-position: absolute;
-height: 100%;
-width: 100%;
+  const Gui = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
 
-display: flex;
-flex-flow: column;
-justify-content: center;
-`;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  `;
 
-const NavButtons = styled.div`
+  const NavButtons = styled.div`
   display: flex;
   align-items: center;
 
-`;
+  `;
 
-const NavButton = styled.button`
-border: none;
-position: absolute;
-background: ${Colors.navButtonBackground};
+  const NavButton = styled.button`
+  border: none;
+  position: absolute;
+  background: ${Colors.navButtonBackground};
 
-border-radius: 10px;
+  border-radius: 10px;
 
-display: flex;
-flex-flow: column;
-justify-content: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 
-padding: 1rem; // 0.2em;
+  padding: 1rem; // 0.2em;
 
-z-index: 10;
+  z-index: 10;
 
-cursor: pointer;
+  cursor: pointer;
 
-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 
-font-family: Times;
-font-size: 3rem;
-text-decoration: none;
-color: ${Colors.navButtonTextColor};
+  font-family: Times;
+  font-size: 3rem;
+  text-decoration: none;
+  color: ${Colors.navButtonTextColor};
 
-:focus {
-  outline: none;
-}
+  :focus {
+    outline: none;
+  }
 
-:hover {
-  background: ${Colors.navButtonBackgroundHover};
-  color: ${Colors.navButtonTextColorHover};
-}
-`;
+  :hover {
+    background: ${Colors.navButtonBackgroundHover};
+    color: ${Colors.navButtonTextColorHover};
+  }
+  `;
 
-const PrevButton = NavButton.extend`
-left: 10px;
-`;
+  const PrevButton = NavButton.extend`
+  left: 10px;
+  `;
 
-const NextButton = NavButton.extend`
-right: 10px;
-`;
+  const NextButton = NavButton.extend`
+  right: 10px;
+  `;
