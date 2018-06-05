@@ -80,7 +80,7 @@ const NavButtons = styled.div`
 const NavButton = styled.button`
 border: none;
 position: absolute;
-background-color: ${Colors.navButtonBackground};
+background: ${Colors.navButtonBackground};
 
 border-radius: 10px;
 
@@ -106,7 +106,7 @@ color: ${Colors.navButtonTextColor};
 }
 
 :hover {
-  background-color: ${Colors.navButtonBackgroundHover};
+  background: ${Colors.navButtonBackgroundHover};
   color: ${Colors.navButtonTextColorHover};
 }
 `;
