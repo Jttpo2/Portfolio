@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ## [Unreleased]
 ### Added
 - Das Irischen Bände.
+- Description overlay.
 
 ## [1.0.0] - 2018-06-04
 ### Added
