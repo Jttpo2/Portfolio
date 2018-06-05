@@ -27,7 +27,7 @@ width: 30%;
 padding: 10px;
 background: ${Colors.infoPanelBackground};
 color: ${Colors.infoPanelText};
-z-index: 10;
+z-index: 5;
 border-radius: 10px;
 
 `;
