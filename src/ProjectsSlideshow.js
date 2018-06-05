@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Colors from './Colors.js';
+import Constants from './Constants.js';
 import Project from './Project.js';
 import DescriptionOverlay from './DescriptionOverlay.js';
 
@@ -120,9 +121,9 @@ export default class ProjectsSlideshow extends React.Component {
   `;
 
   const PrevButton = NavButton.extend`
-  left: 10px;
+  left: ${Constants.edgeMargin};
   `;
 
   const NextButton = NavButton.extend`
-  right: 10px;
+  right: ${Constants.edgeMargin};
   `;

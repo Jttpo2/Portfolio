@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Colors from './Colors.js';
+import Constants from './Constants.js';
 
 export default class DescriptionOverlay extends React.Component {
   render() {
@@ -20,8 +21,8 @@ export default class DescriptionOverlay extends React.Component {
 
 const Container = styled.div`
 position: absolute;
-top: 10px;
-right: 10px;
+top: ${Constants.edgeMargin};
+right: ${Constants.edgeMargin};
 width: 30%;
 padding: 10px;
 background: ${Colors.infoPanelBackground};
