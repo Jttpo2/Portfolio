@@ -7,7 +7,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploydev": "git co master && git merge dev && git push && git push --tags && git co dev",
+    "deploy": "git co master && git push && git push --tags && git co dev"
   },
   "repository": {
     "type": "git",
