@@ -24,6 +24,11 @@ class App extends Component {
         url:  'https://dadgad-tuner.netlify.com',
         description: 'Simple guitar tuner'
       },
+      {
+        name: 'das-irischen-bande',
+        url: 'https://dasirischenbande.netlify.com/',
+        description: 'Band page for Das Irischen Bände, a Gothenburg based Irish trad group'
+      },
     	{
     		name: 'perlin',
     		url: this.projectsPath + this.p5Path + 'perlin/',
