@@ -15,54 +15,54 @@ class App extends Component {
 
     this.projects = [
       {
-        name:'Singit',
+        name: 'Singit',
         url: 'https://singit.netlify.com',
-        description: 'Distributed live karaoke helper'
+        description: 'Distributed live karaoke helper. Try on several units simultaneously.'
       },
       {
-        name:'Dadgad tuner',
+        name: 'Dadgad tuner',
         url:  'https://dadgad-tuner.netlify.com',
-        description: 'Simple guitar tuner'
+        description: 'Simple guitar tuner.'
       },
       {
         name: 'Das Irischen Bände',
         url: 'https://dasirischenbande.netlify.com/',
-        description: 'Band page for Das Irischen Bände, a Gothenburg based Irish trad group'
+        description: 'Band page for Das Irischen Bände, a Gothenburg based Irish trad group.'
       },
     	{
     		name: 'Perlin',
     		url: this.projectsPath + this.p5Path + 'perlin/',
     		// entryFileName: this.sketchNameStandard,
     		readmeFileName: this.readmeNameStandard,
-    		description: 'Perlin noise pattern generating experiment'
+    		description: 'Perlin noise pattern generating experiment.'
     	},
     	{
     		name: 'Flowers',
     		url: this.projectsPath + this.p5Path + 'flowers/',
     		// entryFileName: this.sketchNameStandard,
     		readmeFileName: this.readmeNameStandard,
-    		description: 'Simulation of tulips shuddering in the wind'
+    		description: 'Simulation of tulips shuddering in the wind.'
     	},
     	{
     		name: 'Flockheart',
     		url: this.projectsPath + this.unityPath + 'flockheart/',
     		// entryFileName: this.sketchNameStandard,
     		readmeFileName: this.readmeNameStandard,
-    		description: 'Swarm simulation'
+    		description: 'Swarm simulation.'
     	},
     	{
     		name: 'Blobs',
     		url: this.projectsPath + this.p5Path + 'blobs/',
     		// entryFileName: this.sketchNameStandard,
     		readmeFileName: this.readmeNameStandard,
-    		description: 'Simple blob-eat-blob game'
+    		description: 'Simple blob-eat-blob game.'
     	},
     	{
     		name: 'Code rain',
     		url: this.projectsPath + this.p5Path + 'code-rain/',
     		// entryFileName: sketchNameStandard,
     		readmeFileName: this.readmeNameStandard,
-    		description: 'Matrix style code rain'
+    		description: 'Matrix style code rain.'
     	}
     ];
   }
